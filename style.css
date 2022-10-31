@@ -1,0 +1,31 @@
+
+div{
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    }
+
+.gridContainer{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    height: 780px;
+    width: 780px;
+}
+
+.row{
+    display: flex;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    flex-grow: 1;
+    
+}
+
+.column{
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    display: flex;
+    flex-grow: 1;
+}

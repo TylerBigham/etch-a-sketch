@@ -1,5 +1,6 @@
 
 div{
+    border: 1px blue solid;
 }
 .container{
     display: flex;
@@ -29,3 +30,17 @@ div{
     display: flex;
     flex-grow: 1;
 }
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+/* .sliderContainer{
+    display: flex;
+    justify-content: center;
+    }
+
+.slider{
+    width: 50%;
+} */

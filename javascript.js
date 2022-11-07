@@ -1,6 +1,7 @@
 
 const gridContainer = document.querySelector('.gridContainer');
 const resetButton = document.querySelector('.reset');
+//const grid = document.querySelector('.column');
 //const range = document.getElementById("myRange");
 
 getInput();
@@ -28,13 +29,23 @@ function getInput(){
 function createGrid(num){
     for (let i = 0; i < num; i++){
         const grid = document.createElement('div');
-        grid.classList.add('row');
+        grid.classList.add("row");
         gridContainer.appendChild(grid);
         for (let j = 0; j < num; j++){
             const column = document.createElement('div');
-            column.classList.add('column');
+            column.classList.add("column");
             column.textContent = '';
-            grid.appendChild(column);
+            grid.appendChild(column);            
         }
     }
+    const square = document.querySelectorAll('.column');
+    backGroundchange(square);
+}
+
+function backGroundchange(cell){
+    cell.forEach((div) => {
+        div.addEventListener('mouseenter', (e) => {
+            e.target.style.backgroundColor = 'black';
+        }, {once:true });
+    });
 }
